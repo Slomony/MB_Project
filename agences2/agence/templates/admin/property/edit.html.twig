@@ -1,0 +1,75 @@
+
+{% extends 'base.html.twig'%}
+{% form_theme formAdmin 'bootstrap_4_layout.html.twig' %}
+
+
+{% block body %}
+<div class="container">
+<h1> Editer les biens </h1>
+{{ include ('admin/property/_form.html.twig', {button:'Editer'})}}
+
+
+</div>
+
+{#
+<div class="container">
+<h1> Modifier un bien </h1>
+<form method="post" action="editform.php">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Titre</label>
+      <input type="text" class="form-control" value="{{property.title}}" placeholder="titre">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Prix</label>
+      <input type="number" class="form-control" value="{{property.price}}" placeholder="prix">
+    </div>
+      <div class="form-group col-md-3">
+      <label>Surface</label>
+      <input type="number" class="form-control" value="{{property.surface}}"placeholder="surface">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Pièces</label>
+      <input type="number" class="form-control" value="{{property.rooms}}"placeholder="pièces">
+      </div>
+    <div class="form-group col-md-4">
+      <label>Chambres</label>
+      <input type="number" class="form-control"value="{{property.bedrooms}}" placeholder="chambres">
+      </div>
+    <div class="form-group col-md-4">
+      <label>Etage</label>
+      <input type="number" class="form-control"value="{{property.floor}}" placeholder="étage">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Heat</label>
+      <input type="number" class="form-control"value="{{property.heat}}" placeholder="heat">
+    </div>
+     <div class="form-group col-md-4">
+      <label>City</label>
+      <select class="form-control" >
+      {% for cities in city %}
+    <option class="form-control" value="{{cities.cities}}"> {{cities.cities}} </option>    
+     {% endfor %}
+     </select>
+    </div>
+     <div class="form-group col-md-4">
+      <label>Code postale</label>
+      <input type="text" value="{{property.postalecode}}"class="form-control" placeholder="postale">
+    </div>
+    <div class="form-group col-md-8">
+      <label>Adresse</label>
+      <input type="text" class="form-control"value="{{property.address}}" placeholder="adresse">
+    </div>
+    
+    <div>
+      <label>Sold</label>
+      <input type="checkbox" value="{{property.sold}}">
+    </div>
+    <div class="form-group col-md-12">
+    <label for="inputAddress">Description</label>
+    <input type="text"  value="{{property.description}}"class="form-control"  placeholder="description">
+  </div>
+  </div>
+</form>
+</div>#}
+{% endblock %}

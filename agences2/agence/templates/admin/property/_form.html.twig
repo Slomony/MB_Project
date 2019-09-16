@@ -1,0 +1,26 @@
+{{form_start(formAdmin)}}
+
+<div class="row">
+<div class="form-group col-md-4">{{form_row(formAdmin.title)}} </div>
+<div class="form-group col-md-4">{{form_row(formAdmin.price)}} </div>
+<div class="form-group col-md-4">{{form_row(formAdmin.surface)}} </div>
+</div>
+
+<div class="row">
+<div class="form-group col-md-4">{{form_row(formAdmin.rooms)}} </div>
+<div class="form-group col-md-4">{{form_row(formAdmin.bedrooms)}} </div>
+<div class="form-group col-md-4">{{form_row(formAdmin.heat)}} </div>
+<div class="form-group col-md-4">{{form_row(formAdmin.floor)}} </div>
+</div>
+<div class="row">
+<div class="form-group col-md-4">{{form_row(formAdmin.city)}} </div>
+<div class="form-group col-md-3">{{form_row(formAdmin.postale_code)}} </div>
+<div class="form-group col-md-4">{{form_row(formAdmin.address)}} </div>
+<div class="form-group col-md-2">{{form_row(formAdmin.sold)}} </div>
+</div>
+<div class="row">
+<div class="form-group col-md-12">{{form_row(formAdmin.description)}} </div>
+</div>
+<button type="submit" class="btn btn-primary">{{button}} </button>
+
+{{form_end(formAdmin)}}
